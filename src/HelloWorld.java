@@ -31,6 +31,7 @@ public class HelloWorld {
         myNumber = 123L;
         System.out.println(myNumber);
         /*
+        An integer fits inside a long
         Adding L allowed the code to execute
          */
         myNumber = 123;
@@ -90,7 +91,6 @@ According to the compiler it expects a long
     y -= x;
         System.out.println(x);
         System.out.println(y);
-
 
     }
 }
