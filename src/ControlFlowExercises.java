@@ -39,6 +39,18 @@ public class ControlFlowExercises {
         }
         while (number < 1000000);
 
+
+        //Refactoring
+
+//        for (long i = 100; i >= 10; i -= 5){
+//            System.out.println(i);
+//        }
+//
+//        for (lonh i = 2; i <= 1000000; i *= i){
+//            System.out.println(i);
+//        }
+
+
         //Question 2
 
         for (int numm = 0; numm <= 100; numm++) {
