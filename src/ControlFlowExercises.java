@@ -54,12 +54,13 @@ public class ControlFlowExercises {
         //Question 2
 
         for (int numm = 0; numm <= 100; numm++) {
-            if (numm % 3 == 0) {
+
+            if (numm % 3 == 0 && numm % 5 == 0) {
+                System.out.println("FizzBuzz");
+            }else if (numm % 3 == 0) {
                 System.out.println("Fizz");
             } else if (numm % 5 == 0) {
                 System.out.println("Buzz");
-            } else if (numm % 3 == 0 && numm % 5 == 0) {
-                System.out.println("FizzBuzz");
             }
         }
 
