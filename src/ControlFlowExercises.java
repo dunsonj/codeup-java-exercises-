@@ -69,12 +69,13 @@ public class ControlFlowExercises {
             System.out.print("Please enter an integer");
             int value = in.nextInt();
 
-            System.out.println("Number\tSquare\tCube");
-            System.out.println("------\t------\t------");
+            System.out.println("Number | Square | Cube");
+            System.out.println("------ | ------ |-----");
             for (int j = 1; j <= value; j++) {
                 int square = j * j;
                 int cube = j * j * j;
-                System.out.println(j + "\t" + square + "\t" + cube);
+                System.out.printf("%-8s|%8s|%5s\n", j, square, cube);
+//                System.out.println(j + "\t" + square + "\t" + cube);
             }
             System.out.print("Do you want to continue? (yes/no): ");
             String choice = in.next();
