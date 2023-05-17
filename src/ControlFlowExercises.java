@@ -101,7 +101,7 @@ public class ControlFlowExercises {
         } else if (numeriGrade <= 59 && numeriGrade >= 0) {
             System.out.println("You have a \"F\"");
         } else {
-            System.out.println("Default case");
+            System.out.println("Sorry invaid number");
         }
 
         in.close();
