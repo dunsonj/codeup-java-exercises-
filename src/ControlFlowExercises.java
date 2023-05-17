@@ -11,7 +11,7 @@ public class ControlFlowExercises {
 //            i++;
 //        }
         //b. Do while
-//        int num = 100;
+//        int num = 0;
 //        do
 //        {
 //            System.out.println(num);
@@ -19,7 +19,7 @@ public class ControlFlowExercises {
 //        }
 //        while (num <= 100);
 
-
+//        int num = 100;
 //        do
 //        {
 //            System.out.println(num);
