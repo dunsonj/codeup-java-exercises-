@@ -39,6 +39,11 @@ public class MethodsExercises {
 
     public static int mulNum(int numOne, int numTwo) {
         return numOne * numTwo;
+
+//        int sum = 0;
+//        for (int i = 0; i < numTwo; i ++){
+//            sum += numOne
+//        }
     }
 
     public static int divNum(int numOne, int numTwo) {
