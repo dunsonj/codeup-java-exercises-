@@ -29,15 +29,15 @@ public class MethodsExercises {
 
     }
 
-    public static int addNum(int numOne, int numTwo) {
+    public static double addNum(double numOne, double numTwo) {
         return numOne + numTwo;
     }
 
-    public static int subNum(int numOne, int numTwo) {
+    public static double subNum(double numOne, double numTwo) {
         return numOne - numTwo;
     }
 
-    public static int mulNum(int numOne, int numTwo) {
+    public static double mulNum(double numOne, double numTwo) {
         return numOne * numTwo;
 
 //        int sum = 0;
@@ -46,11 +46,11 @@ public class MethodsExercises {
 //        }
     }
 
-    public static int divNum(int numOne, int numTwo) {
+    public static double divNum(double numOne, double numTwo) {
         return numOne / numTwo;
     }
 
-    public static int modulusNum(int numOne, int numTwo) {
+    public static double modulusNum(double numOne, double numTwo) {
         return numOne % numTwo;
     }
 
@@ -62,7 +62,7 @@ public class MethodsExercises {
         do {
             System.out.println("Enter a number between" + min + "and " + max);
             userInput = Integer.parseInt(in.next());
-        } while (userInput <= min || userInput >= max);
+        } while (userInput <=min || userInput > max);
         return userInput;
     }
 
@@ -109,7 +109,10 @@ public class MethodsExercises {
 
         return "The results are: " + randIntOne + " " + randIntTwo;
 
+
+        }
     }
+
 
 }
 

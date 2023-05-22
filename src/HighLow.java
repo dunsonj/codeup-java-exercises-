@@ -18,8 +18,8 @@ public class HighLow {
         // userInput === randNum)
 
     int userInput;
-    System.out.println("Guess a number between 1 and 100");
     Scanner in = new Scanner(System.in);
+    System.out.println("Guess a number between 1 and 100");
 
     userInput = Integer.parseInt(in.next());
 
