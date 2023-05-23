@@ -14,6 +14,4 @@ public class Circle {
         return Math.PI * radius * 2;
     }
 
-
-
 }
