@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.Random;
+
 //Question 2
 public class ServerNameGenerator {
     public static String getRandom(String[] array) {
