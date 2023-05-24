@@ -8,5 +8,15 @@ public class Square extends Rectangle{
         super(side, side);
     }
 
+    @Override
+    public int getArea() {
+        System.out.println("This is the area: ");
+        return side * side;
+    }
 
+    @Override
+    public int getParameter() {
+        System.out.println("This is the parameter: ");
+        return 4 * side;
+    }
 }
