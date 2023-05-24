@@ -37,7 +37,7 @@ public class ServerNameGenerator {
         nouns[8] = "Tree";
         nouns[9] = "Phone";
 
-        System.out.println("Your server name is: " + getRandom(adjectives) + " " + getRandom(nouns));
+        System.out.println("Your server name is: " + getRandom(adjectives) + "-" + getRandom(nouns));
     }
 
 }
