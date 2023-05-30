@@ -34,7 +34,6 @@ public class GradesApplication {
 
 
         HashMap<String, Student> students = new HashMap<>();
-
         students.put("Jakira", student1);
         students.put("Consuella", student2);
         students.put("Brandon", student3);
@@ -42,6 +41,8 @@ public class GradesApplication {
 
 
         System.out.println("Welcome");
+        System.out.println("Here are the GIT usernames of our students: ");
+        System.out.println(students.keySet());
 
         while (true) {
             System.out.println("Which student do you want more informatin on?");
