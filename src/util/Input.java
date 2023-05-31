@@ -24,13 +24,14 @@ public class Input {
     }
 
 
+/*
    public int getInt(){
       return this.scanner.nextInt();
    }
    public double getDouble(){
        return this.scanner.nextDouble();
    }
-
+*/
    public int getInt(int min, int max){
         int userNum = Integer.valueOf(this.getString());
         if(userNum >= min && userNum <= max){
@@ -48,6 +49,7 @@ public class Input {
        System.out.println("Number is not in bounds");
         return getDoub(min, max);
    }
+
 
 //----------------------------------------------------------------------
 //bonus
@@ -70,6 +72,30 @@ public class Input {
         System.out.println("Number is not in bounds");
         return getDoub(min, max, prompt);
     }
+
+    public int getInt(){
+        while(true){
+            try{
+                String input = getString();
+                return Integer.valueOf(input);
+            } catch (NumberFormatException e){
+                System.out.println("Invalid input. Please enter an integer.");
+            }
+        }
+    }
+
+    public double getDouble(){
+        while(true){
+            try{
+                String input = getString();
+                return Double.valueOf(input);
+            }catch (NumberFormatException e){
+                System.out.println("Invalid input. Please enter an integer.");
+            }
+        }
+    }
+
+
 //---------------------------------------------------------------------
 
     public static void main(String[] args) {
