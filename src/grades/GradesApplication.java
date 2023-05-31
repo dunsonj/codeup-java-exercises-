@@ -40,40 +40,38 @@ public class GradesApplication {
         students.put("Timothy", student4);
 
 
-        System.out.println("Welcome");
-        System.out.println("Here are the GIT usernames of our students: ");
-        System.out.println(students.keySet());
+        System.out.println("Welcome!");
+        System.out.println("Here are the GitHub usernames of our students:\n");
+        for (String username : students.keySet()) {
+            System.out.print("|" + username + "| ");
+        }
+        System.out.println("\n");
 
         while (true) {
-            System.out.println("Which student do you want more informatin on?");
+            System.out.print("What student would you like to see more information on?\n> ");
+            String username = scanner.nextLine();
 
-            String userInput;
+            if (students.containsKey(username)) {
+                Student student = students.get(username);
+                System.out.println("Name: " + student.getName() + " - GitHub Username: " + username);
+                System.out.print("Name:" + student.getGrades() + "\n");
+                System.out.println("Current Average: " + student.getGradeAverage() + "\n");
 
-//            String checkStudentsName = input.getString();
-            for (String person : students.keySet()) {
-                System.out.println("- " + person);
+            } else {
+                System.out.println("Sorry, no student found with the GitHub username of \"" + username + "\".\n");
             }
-            System.out.println("Do you want to continue y/n");
 
-            userInput = scanner.nextLine();
+            System.out.print("Would you like to see another student? (yes/no)\n> ");
+            String choice = scanner.nextLine().toLowerCase();
 
-            if (userInput.equalsIgnoreCase("n")) {
+            if (!choice.equals("yes")) {
+                System.out.println("\nGoodbye, and have a wonderful day!");
                 break;
             }
-
-            Student student = students.get(userInput);
-            if (student != null) {
-                System.out.println("\nStudent Name: " + student.getName());
-                System.out.println("Grades: " + student.getGrades());
-                System.out.println("Average of the grades is: " + student.getGradeAverage());
-            } else {
-                System.out.println("\nNo student found with that name");
-            }
+            System.out.println();
         }
-        System.out.println("Good bye, exiting application, Gooodbye. ");
 
+        scanner.close();
     }
 
-
 }
-
