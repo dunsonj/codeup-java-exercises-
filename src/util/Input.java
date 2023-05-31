@@ -95,24 +95,14 @@ public class Input {
         System.out.println("Number is not in bounds");
         return getDoub(min, max, prompt);
     }
-}
-
-
-
 
 //---------------------------------------------------------------------
-
-    /*
     public static void main(String[] args) {
         Input inputOne = new Input();
 //        System.out.println("Get String: ");
 //        System.out.println(inputOne.getString());
 //        System.out.println("yesNo: ");
 //        System.out.println(inputOne.yesNo());
-        System.out.println("Give me a number between 1 and 10");
-        System.out.println(inputOne.getDouble());
-        System.out.println("Give me a number between 1 and 10");
-        System.out.println(inputOne.getInt());
 
         System.out.println("Give me a number between 1 and 10");
         System.out.println(inputOne.getInt(1,10));
@@ -129,4 +119,4 @@ public class Input {
     }
 }
 
-     */
+
