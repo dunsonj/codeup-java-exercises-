@@ -74,6 +74,32 @@ public class Input {
         }
     }
 
+
+/*
+    public int getInt() {
+      System.out.println("Enter an Integer Value");
+      String stringVal = getString():
+            try {
+                return Integer.valueOf(input);
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid input. Please enter an integer.");
+                return getInt():
+            }
+        }
+    }
+
+    public double getDouble() {
+      System.out.println("Enter a Double Value");
+       String stringVal = getString():
+            try {
+                return Double.valueOf(input);
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid input. Please enter an integer.");
+                return getDouble;
+            }
+        }
+    }
+*/
     //----------------------------------------------------------------------
 //bonus
     public int getInt(int min, int max, String prompt) {
